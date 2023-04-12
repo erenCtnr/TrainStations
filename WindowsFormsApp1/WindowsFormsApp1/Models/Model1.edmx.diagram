@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5751f4d4b79c4f2ca38a2bb80bd32348" Name="Diagram1">
+        <EntityTypeShape EntityType="db.trainsModel.Stations" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="db.trainsModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db.trainsModel.Trips" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="db.trainsModel.Users" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="db.trainsModel.FK__Trips__ArrivalSt__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="db.trainsModel.FK__Trips__Departure__32E0915F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
