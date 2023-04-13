@@ -1,0 +1,20 @@
+CREATE TABLE Users (
+  UserID INT PRIMARY KEY IDENTITY(1,1),
+  UserName NVARCHAR(100) NOT NULL,
+  Password NVARCHAR(200) NOT NULL
+)
+CREATE TABLE Stations (
+  StationID INT PRIMARY KEY IDENTITY(1,1),
+  StationName NVARCHAR(100) NOT NULL,
+  StationAddress NVARCHAR(200) NOT NULL,
+  StationLocation NVARCHAR(200) NOT NULL
+)
+CREATE TABLE Trips (
+  TripID INT PRIMARY KEY IDENTITY(1,1),
+  DepartureStationID INT NOT NULL,
+  ArrivalStationID INT NOT NULL,
+  DepartureTime DATETIME2 NOT NULL,
+  ArrivalTime DATETIME2 NOT NULL,
+  FOREIGN KEY (DepartureStationID) REFERENCES Stations(StationID),
+  FOREIGN KEY (ArrivalStationID) REFERENCES Stations(StationID)
+)
